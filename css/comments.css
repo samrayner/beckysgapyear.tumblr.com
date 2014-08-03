@@ -1,0 +1,146 @@
+/*
+Title:      	Intense Debate Comment Styles
+Author:     	Sam Rayner - http://samrayner.com
+Updated:    	September 09
+*/
+
+/* Hide Cruft
+-------------------------------------------------- */
+
+.idc-btn_s,
+#IDCColumnURL,
+#IDCColumnURLLabel,
+#IDCommentsHead,
+#IDCPostNav, 
+.idc-foot { display: none !important; }
+
+#IDCommentsHead h3,
+.idc-c-h,
+.idc-c-h-inner,
+.idc-i,
+.idc-i span {
+	padding: 0 !important;
+	margin: 0 !important;
+	line-height: 18px !important;
+}
+
+/* Size and Position Whole Thing
+-------------------------------------------------- */
+
+#idc-container {
+	width:  590px !important;
+	margin: 30px 0 0 150px !important;
+}
+
+/* Headings
+-------------------------------------------------- */
+
+#idc-container h3 {
+	text-decoration: none !important;
+}
+
+/* Existing Comments
+-------------------------------------------------- */
+
+#IDCommentsNoCommentsDiv {
+	margin-bottom: 20px !important;
+}
+
+#IDCommentsNoCommentsDiv a {
+	background: none !important;
+	color:  #003 !important;
+}
+
+.idc-c-h {
+	background: none !important;
+}
+
+.idc-i {
+	height: 2.3em !important;
+}
+
+.idc-i span,
+.idc-i a,
+#IDCommentsNewThreadCover h3 {
+	display: inline !important;
+	font-size: 14px !important;
+	color: #000 !important;
+	padding: 1px 3px !important;
+	line-height: 18px !important;
+}
+
+#IDCommentsNewThreadCover h3,
+.idc-i span {
+	background-color: #cde !important;
+	background-color: rgba(51, 153, 255, 0.15) !important;
+}
+
+.idc-i .idc-rep {
+	display: none !important;
+}
+
+.idc-time {
+	position: relative !important;
+	top: 2px !important;
+	left: 5px !important;
+}
+
+.idc-time a {
+	background: none !important;
+	font-size: 12px !important;
+	color: #666 !important;
+}
+
+#idc-cover .idc-c {
+	padding-bottom: 15px !important;
+	margin-bottom: 25px !important;
+	border-bottom: 1px solid #ccc !important;
+}
+
+.idc-c-b {
+	position: absolute !important;
+}
+
+/* New Comment Form
+-------------------------------------------------- */
+
+#IDCThread {
+	margin-top: 10px !important;
+}
+
+#IDCommentNewThreadText {
+	width: 580px !important;
+}
+
+.idc-column {
+	position: relative !important;
+	z-index: 10 !important;
+	width: 230px !important;
+}
+
+#IDCommentsNewThreadListItem1 {
+	margin-top: 10px !important;
+}
+
+#IDCommentsNewThreadListItem1 a {
+	background: none !important;
+	text-decoration: underline !important;
+}
+
+.idc-c-b .idc-right {
+	margin: -2px 0 0 450px !important;
+}
+
+/* Popup Messages
+-------------------------------------------------- */
+
+#IDCommentPopupInner {
+	text-shadow: none !important;
+}
+
+/* Disable New Comment Highlighting
+-------------------------------------------------- */
+
+.idc-highlight {
+	background: none !important;
+}

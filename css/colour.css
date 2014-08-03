@@ -1,0 +1,172 @@
+/*
+Title:      	Colour Styles
+Author:     	Sam Rayner - http://samrayner.com
+Updated:    	September 09
+*/
+
+
+/* BACKGROUNDS
+================================================== */
+
+body 				{ background: #ddc390 url(../images/texture.jpg) repeat 0 0; }
+#map 				{ background: url(../images/europe.jpg) no-repeat 50% 0; }
+#south 			{ background: url(../images/antartica.jpg) no-repeat 50% 100%; }
+#page 			{ background: #f1f1f1 url(../images/page.jpg) repeat-y 50% 0; }
+h1 					{ background: url(../images/doodles.gif) no-repeat 92% 20px; }
+.tape 			{ background: url(../images/tape.png) no-repeat 0 0; }
+.signoff 		{ background: url(../images/signoff.gif) no-repeat 0 0; }
+ul li 			{ background: url(../images/bullet.gif) no-repeat 0 50%; }
+
+.contact h2,
+footer .future { background: url(../images/arrows.gif) no-repeat 100% -30%; }
+
+footer .past { background: url(../images/arrows.gif) no-repeat 0 130%; }
+
+#intro, .post,
+#page > footer { background: url(../images/fade.png) repeat-x 50% 100%; }
+
+#post-list .post:last-child { background: none; }
+.tags li { background: none; }
+
+#filter-banner { background: url(../images/doodles.gif) no-repeat 0 -100px; }
+
+.post-body blockquote,
+.quote { background: url(../images/quotes.gif) no-repeat -37px 0; }
+
+.quote { /* if multi-background */
+	background: url(../images/quotes.gif) no-repeat -37px 0, 
+							url(../images/quotes.gif) no-repeat 554px 0;
+}
+
+.contact a[href*="facebook"]:link,
+.contact a[href*="facebook"]:visited { 
+	background: #425695 url(../images/facebook.png) no-repeat 50% 45%;
+}
+
+.contact a[href*="facebook"]:hover,
+.contact a[href*="facebook"]:active,
+.contact a[href*="facebook"]:focus { 
+	background-color: #36477f;
+}
+
+#search 			{ background: url(../images/flowers.gif) no-repeat 100% -58px; }
+#search form 	{ background: url(../images/flowers.gif) no-repeat 0 0; }
+#search h3 		{ background: url(../images/doodles.gif) no-repeat 100% 100%; }
+
+img 				{ background-color: #fff; }
+.flash 			{ background-color: #000; }
+
+/* Highlights
+-------------------------------------------------- */
+
+a:link, a:visited {
+	background-color: #faf;
+	background-color: rgba(255, 51, 255, 0.3);
+}
+
+a:hover, a:active, a:focus {
+	background-color: #f9f;
+	background-color: rgba(255, 51, 255, 0.4);
+}
+
+a[href*="maps.google"]:link, 
+a[href*="maps.google"]:visited,
+h2 a:link, h2 a:visited {
+	background-color: #cf9;
+	background-color: rgba(102, 255, 0, 0.3);
+}
+
+a[href*="maps.google"]:hover, 
+a[href*="maps.google"]:active, 
+a[href*="maps.google"]:focus,
+h2 a:hover, h2 a:active, h2 a:focus {
+	background-color: #9f6;
+	background-color: rgba(102, 255, 0, 0.5);
+}
+
+a[href^="/"]:link, a[href^="/"]:visited,
+a[href^="mailto:"]:link, a[href^="mailto:"]:visited,
+a[href*="beckysgapyear"]:link, a[href*="beckysgapyear"]:visited {
+	background-color: #ff9;
+	background-color: rgba(255, 255, 51, 0.5);
+}
+
+a[href^="/"]:hover, a[href^="/"]:active, a[href^="/"]:focus,
+a[href^="mailto:"]:hover, a[href^="mailto:"]:active, a[href^="mailto:"]:focus,
+a[href*="beckysgapyear"]:hover, 
+a[href*="beckysgapyear"]:active,
+a[href*="beckysgapyear"]:focus {
+	background-color: #ff6;
+	background-color: rgba(255, 255, 51, 0.9);
+}
+
+#filter-banner strong,
+dt.odd {
+	background-color: #cde;
+	background-color: rgba(51, 153, 255, 0.15);
+}
+
+dt.even {
+	background-color: #bde;
+	background-color: rgba(51, 153, 255, 0.3);
+}
+
+/* Non-Highlight Resets
+-------------------------------------------------- */
+
+figure dt a,
+#page h1 a,
+#page .post-date,
+#page footer a { background-color: transparent; }
+
+
+/* TEXT
+================================================== */
+
+body { color: #003; }
+
+#search input { color: #999; }
+
+/* Highlighted Text
+-------------------------------------------------- */
+
+dialog dt,
+a:link, a:visited,
+a:hover, a:active { color: #000; }
+
+/* Pencil
+-------------------------------------------------- */
+
+footer h3 { color: #888; }
+
+h1 a:link, h1 a:visited { color: #666; }
+h1 a:hover, h1 a:active, h1 a:focus { color: #444; }
+
+.contact h2, cite,
+.post-date:link, .post-date:visited,
+footer a:link, footer a:visited { color: #444; }
+
+.post-date:hover, .post-date:active, .post-date:focus,
+footer a:hover, footer a:active, footer a:focus { color: #222; }
+
+
+/* BORDERS
+================================================== */
+
+img, .flash { border-color: #fff; }
+
+footer a:hover, footer a:active, footer a:focus {
+	border-bottom: 1px solid #aaa;
+}
+
+footer nav a:hover, footer nav a:active, footer nav a:focus {
+	border-bottom: none;
+}
+
+
+/* OPACITIES
+================================================== */
+
+a:hover img {
+	opacity: 0.95;
+}

@@ -1,0 +1,339 @@
+/*
+Title:      	Layout Styles
+Author:     	Sam Rayner - http://samrayner.com
+Updated:    	September 09
+*/
+
+/* CLEARFIX
+================================================== */
+
+#intro:after,
+.contact:after,
+.post:after,
+dialog:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.sketchblock { margin-top: -2px !important; } /* Cufon shift */
+
+.hide { display: none; }
+
+/* MAIN LAYOUT
+================================================== */
+
+#south { padding: 84px 0 138px; }
+
+#page {
+	position: relative;
+	width: 790px;
+	padding-bottom: 170px;
+	margin: 0 auto;
+	min-height: 1000px;
+	
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.post {	
+	padding: 30px 30px 30px 150px;
+	min-height: 50px;
+}
+
+
+/* TEXT / VERTICAL RHYTHM
+================================================== */
+
+h1 { padding: 35px 40px 0; }
+
+h1, h2, h3, 
+h4, h5, h6,
+p, blockquote { margin-bottom: 18px; }
+
+ul, ol, dl {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+li 		{ margin: 5px 0; }
+ol 		{ margin-left: 22px; }
+ul li { padding-left: 22px; }
+
+/* Highlights
+-------------------------------------------------- */
+
+#filter-banner strong,
+a {
+	margin: -1px -3px;
+	padding: 1px 3px;
+}
+
+figure dt a,
+#page h1 a,
+#page .post-date,
+#page footer a { 
+	margin: 0;
+	padding: 0;
+}
+
+h2 a {
+	margin: -5px;
+	padding: 5px;
+}
+
+
+/* INTRO
+================================================== */
+
+#intro { padding: 0 40px; }
+
+#intro p {
+	float: left;
+	width: 350px;
+	margin-right: 10px;
+}
+
+#intro img {
+	position: absolute;
+	left: 410px;
+	margin-top: 10px;
+	
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+.tape {
+	width: 57px;
+	height: 97px;
+	display: block;
+	position: absolute;
+	top: 55px;
+	right: 60px;
+	z-index: 2;
+}
+
+.signoff {
+	width: 140px;
+	height: 43px;
+	text-indent: -9999px;
+	margin: -18px 0 18px 115px;
+}
+
+.contact {
+	clear: left;
+	float: left;
+	padding: 18px 0 10px;
+}
+
+.contact h2 {
+	float: left;
+	padding-right: 40px;
+	margin-right: 10px;
+}
+
+.contact a {
+	margin: 0 10px;
+	padding: 5px 8px;
+}
+
+.contact .facebook {
+	display: block;
+	position: relative;
+	margin: -22px 0 0 125px;
+	right: 0;
+	z-index: 2;
+	margin-right: -1ex;
+	padding: 0;
+	width: 88px;
+	height: 26px;
+	text-indent: -9999px;
+	overflow: hidden;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/* Filter Pages
+================================================== */
+
+#filter-banner {
+	padding: 15px 55px;
+	margin: 15px 0 -10px 150px;
+}
+
+#filter-banner strong {
+	font-weight: normal;
+	color: #000;
+}
+
+
+/* MEDIA
+================================================== */
+
+img, .flash {
+	display: block;
+	border: 1px solid;
+	
+	-webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.flash * {
+	height: 300px; /* remove bottom gap */
+}
+
+figure dt,
+figure dt a { float: left; }
+
+figure dt {
+	margin: 0 20px 20px 0;
+}
+
+.audio .post-body { margin-top: 12px; }
+
+
+/* POSTS
+================================================== */
+
+.post-date {
+	display: block;
+	position: absolute;
+	right: 660px;
+}
+
+.post-date .day {
+	display: block;
+}
+
+.post > h2,
+.post-body {
+	width: 490px;
+}
+
+
+/* Quotation
+-------------------------------------------------- */
+
+.quote {
+	width: 490px;
+	padding: 0 50px;
+}
+
+.quote blockquote { display: inline; }
+
+cite:before { content: '\2014\00A0'; }
+
+.post-body blockquote {
+	margin: 24px 0;
+	padding-left: 50px;
+	min-height: 35px;
+}
+
+/* Chat
+-------------------------------------------------- */
+
+dialog dt, dialog dd 	{ float: left; }
+dialog dd + dt { clear: left; }
+
+dialog dt, dialog dd 	{ margin: 5px 10px 5px -3px; }
+dialog dt 			{ padding: 1px 3px; }
+
+/* Post Meta
+-------------------------------------------------- */
+
+article footer h3 {
+	float: left;
+	margin: 0.2em 1ex 0 0;
+}
+
+article footer h3:after {
+	content: ":";
+}
+
+.tags { margin: 18px 0 0; }
+
+.comment-link { margin: 9px 0 0; }
+
+.quote + footer { margin-left: 50px; }
+
+.tags li {
+	display: inline;
+	padding: 0;
+	margin-right: 1ex;
+}
+
+.tags li a:before {
+	content: "#";
+}
+
+
+/* FOOTER
+================================================== */
+
+#search h3 {
+	width: 89px;
+	height: 168px;
+	text-indent: -9999px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+}
+
+#search .submit { display: none; }
+
+#page > footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 170px;
+	padding: 0;
+}
+
+#search {
+	width: 340px;
+	margin: 35px auto;
+}
+
+#search form { padding: 12px 60px; }
+
+#search input {
+	width: 100%;
+}
+
+.archive {
+	text-align: center;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.past, .future {
+	position: absolute;
+	width: 200px;
+	bottom: 13px;
+}
+
+.past { 
+	left: 40px;
+	padding-left: 40px;
+}
+
+.future {
+	text-align: right;
+	right: 40px;
+	padding-right: 40px;
+}

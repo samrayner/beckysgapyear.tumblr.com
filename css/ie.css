@@ -1,0 +1,188 @@
+/*
+Title:      	IE Fixes
+Author:     	Sam Rayner - http://samrayner.com
+Updated:    	September 09
+*/
+
+/* All IEs
+================================================== */
+
+#search h3 { display: none; }
+
+a:link, a:visited {
+	background-color: #faf;
+}
+
+a:hover, a:active, a:focus {
+	background-color: #f9f;
+}
+
+a[href*="maps.google"]:link, 
+a[href*="maps.google"]:visited,
+h2 a:link, h2 a:visited {
+	background-color: #cf9;
+}
+
+a[href*="maps.google"]:hover, 
+a[href*="maps.google"]:active, 
+a[href*="maps.google"]:focus,
+h2 a:hover, h2 a:active, h2 a:focus {
+	background-color: #9f6;
+}
+
+a[href^="/"]:link, a[href^="/"]:visited,
+a[href^="mailto:"]:link, a[href^="mailto:"]:visited,
+a[href*="beckysgapyear"]:link, a[href*="beckysgapyear"]:visited {
+	background-color: #ff9;
+}
+
+a[href^="/"]:hover, a[href^="/"]:active, a[href^="/"]:focus,
+a[href^="mailto:"]:hover, a[href^="mailto:"]:active, a[href^="mailto:"]:focus,
+a[href*="beckysgapyear"]:hover, 
+a[href*="beckysgapyear"]:active,
+a[href*="beckysgapyear"]:focus {
+	background-color: #ff6;
+}
+
+#filter-banner strong,
+dt.odd {
+	background-color: #cde;
+}
+
+dt.even {
+	background-color: #bde;
+}
+
+#IDCommentsNewThreadCover h3,
+.idc-i span {
+	background-color: #cde !important;
+}
+
+#page h1 a,
+#page .post-date,
+#page footer a { background: transparent; }
+
+
+/* IE7 & 6
+================================================== */
+
+#intro,
+.contact,
+.post,
+dialog,
+#search *,
+h1 { *zoom: 1; }
+
+#intro p {
+	*width: 370px;
+}
+
+#intro img {
+	*top: 100px;
+	*left: 430px;
+}
+
+.contact p {
+	*position: absolute;
+}
+
+.contact {
+	*padding-bottom: 20px;
+}
+
+article footer h3 {
+	*float: none;
+	*margin: 2em 0 -10px;
+}
+
+cite {
+	*margin-left: 1ex;
+}
+
+/* Comments
+-------------------------------------------------- */
+
+.idc-c-b {
+	*position: static !important;
+	*margin-top: -30px !important;
+}
+
+.idc-c-b .idc-right {
+	*margin: 0 0 0 450px !important;
+}
+
+/* IE 6 Only
+================================================== */
+
+* html #intro, * html .post {
+	border-bottom: 1px solid #ccc;
+}
+
+* html #post-list .post {
+	border-top: 1px solid #fff;
+}
+
+* html .tape {
+	display: none;
+}
+
+* html .signoff {
+	margin-left: 50px;
+}
+
+* html .contact .facebook {
+	display: inline;
+	position: static;
+	margin: 0 0 0 10px;
+	text-indent: 0;
+}
+
+* html .post-date {
+	width: 200px;
+}
+
+* html dialog,
+* html dialog * {
+	zoom: 1;
+	clear: left;
+	margin: 0;
+}
+
+* html dialog dd {
+	margin-bottom: 10px;
+}
+
+* html #page footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 155px;
+	padding: 0;
+}
+
+* html #page article footer {	
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+* html .post {
+	zoom: 1;
+}
+
+/* Update Bar
+-------------------------------------------------- */
+
+* html #activebar-container {
+	padding: 2px 0 !important;
+}
+
+* html #activebar-container img {
+	margin: 3px 0 3px 5px !important;
+}
+
+* html #activebar-container .close {
+	margin-right: 2px !important;
+}
+
+* html #activebar-container * { border: none !important; }

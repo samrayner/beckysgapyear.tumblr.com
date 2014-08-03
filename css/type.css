@@ -1,0 +1,80 @@
+/*
+Title:      	Typography Styles
+Author:     	Sam Rayner - http://samrayner.com
+Updated:    	June 09
+*/
+
+
+/* FACES
+================================================== */
+
+body 							{ font-family: georgia, "Times New Roman", times, serif; }
+.sketchblock 			{ font-family: "Sketch Block", rockwell, helvetica, arial, sans-serif; }
+pre, code, tt 		{ font-family: monaco, "Courier New", courier, monospace; }
+
+
+/* SIZES / SPACING
+================================================== */
+
+body { 
+	font-size: 14px;
+	line-height: 18px;
+}
+
+h1, h2, h3, 
+h4, h5, h6,
+.post-date 	{ 
+	line-height: 1;
+}
+
+h1 					{ font-size: 48px; }
+
+.contact h2,
+.post-date,
+footer nav 	{ font-size: 24px; }
+
+blockquote 	{ font-size: 18px; }
+
+article footer { font-size: 13px; }
+
+blockquote, cite { line-height: 24px; }
+
+.post-date 	{ text-align: right; }
+
+
+/* WEIGHTS / STYLES
+================================================== */
+
+h1, .contact h2,
+strong, time,
+footer nav,
+dfn, th  				{ font-weight: bold; }
+
+h2, h3, 
+h4, h5, h6 			{ font-weight: normal; }
+
+address, dfn, 
+blockquote,
+em, tfoot,
+.comment-link 	{ font-style: italic; }
+
+cite, pre, 
+code, tt 				{ font-style: normal; }
+
+
+/* DECORATION
+================================================== */
+
+a, footer h3 		{ text-decoration: none; }
+
+h3, h4, h5, h6 	{ text-decoration: underline; }
+
+body 	{ text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px; }
+
+
+/* LISTS
+================================================== */
+
+ul { list-style: none; }
+
+ol { list-style-type: decimal; }

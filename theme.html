@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="image:Header" content="" />
+		<meta name="text:Header image caption" content="Becky with some of the kids she is helping to care for."/>
+		<meta name="text:Facebook" content="http://facebook.com/beckydalling"/>
+	
+		<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+		
+	  <link rel="stylesheet" type="text/css" href="http://beckysgapyear.samrayner.com/css/master.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://beckysgapyear.samrayner.com/css/ie.css" /><![endif]-->
+			
+	  <link rel="alternate" type="application/rss+xml" title="Becky's Gap Year RSS Feed" href="/rss"/>
+	  <link rel="icon" href="http://beckysgapyear.samrayner.com/images/favicon.gif" />
+	  
+	  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	  
+		<script src="http://beckysgapyear.samrayner.com/scripts/cufon.js" type="text/javascript"></script>
+		<script src="http://beckysgapyear.samrayner.com/scripts/sketchblock.font.js" type="text/javascript"></script>
+		<script src="http://beckysgapyear.samrayner.com/scripts/core.js" type="text/javascript"></script>
+		
+	</head>
+	<body id="beckysgapyear-tumblr-com">	
+	<div id="map"><div id="south">
+	<div id="page">
+	
+		<header>
+			<h1 class="sketchblock"><a href="/" title="Home">{Title}</a></h1>
+			
+			{block:IndexPage}
+			<div id="intro">
+				{Description}
+				
+				<p class="signoff">Love, Becky xx</p>
+				
+				{block:IfHeaderImage}
+				<span class="tape"></span>
+				<img src="{image:Header}" width="400" height="300" alt="{text:Header image caption}" />
+				{/block:IfHeaderImage}
+				
+				<div class="contact">
+					<h2 class="sketchblock">Say Hi!</h2>
+					<p><a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#98;&#x65;&#x63;&#107;&#x79;&#x5f;&#x64;&#x61;&#x6c;&#x6c;&#x69;&#110;&#x67;&#64;&#104;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">Email me</a>
+						{block:IfFacebook} 
+							or <a class="facebook" href="{text:Facebook}" rel="external">add me on Facebook</a>
+						{/block:IfFacebook}
+					</p>
+				</div>
+				
+			</div><!--#intro-->
+			{/block:IndexPage}
+			
+			{block:SearchPage}
+			<p id="filter-banner"><strong>{SearchResultCount}</strong> results for <strong>&lsquo;{SearchQuery}&rsquo;</strong>:</p>
+			{/block:SearchPage}
+				
+	    {block:TagPage}
+	    <p id="filter-banner">Posts tagged <strong>&lsquo;{Tag}&rsquo;</strong>:</p>
+	    {/block:TagPage}
+    </header>
+	
+		{block:IndexPage}
+			<section id="post-list">
+			
+			<h2 class="hide">Recent Posts</h2>
+			
+		{/block:IndexPage}
+				
+      {block:Posts}
+      <article class="post">
+      	
+      	<header>
+      	
+      	{block:NewDayDate}
+      	<a class="sketchblock post-date" href="{Permalink}" rel="bookmark">
+	      	<time pubdate datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}T{24HourWithZero}:{Minutes}:{Seconds}+05:30"><span class="day">{ShortDayOfWeek}</span> {DayOfMonth}<sup>{DayOfMonthSuffix}</sup> {ShortMonth}</time>
+      	</a>
+        {/block:NewDayDate}
+          
+        {block:Text}
+        {block:Title}<h2><a href="{Permalink}" rel="bookmark">{Title}</a></h2>{/block:Title}
+        </header>
+        <div class="post-body">{Body}</div>
+				{/block:Text}
+
+        {block:Quote}
+        </header>
+        <div class="quote">
+					<blockquote>{Quote}</blockquote>
+					{block:Source}<cite>{Source}</cite>{/block:Source}
+				</div>
+        {/block:Quote}
+
+        {block:Link}
+        <h2><a href="{URL}" rel="external">{Name}</a></h2>
+        </header>
+        	{block:Description}
+        	<div class="post-body">{Description}</div>
+        	{/block:Description}
+        {/block:Link}
+        
+        {block:Chat}
+	      {block:Title}<h2><a href="{Permalink}" rel="bookmark">{Title}</a></h2>{/block:Title}
+	      </header>
+	        
+	      <dialog>
+	        {block:Lines}
+		 			{block:Label}<dt class="{Alt}">{Label}</dt>{/block:Label}
+		 			<dd>{Line}</dd>
+		 			{/block:Lines}
+				</dialog>
+        {/block:Chat}
+
+        {block:Photo}
+        </header>
+        <figure class="photo">
+          <dt>{LinkOpenTag}<img src="{PhotoURL-400}" alt="{PhotoAlt}"/>{LinkCloseTag}</dt>
+          {block:Caption}<dd class="caption">{Caption}</dd>{/block:Caption}
+        </figure>
+        {/block:Photo}
+        
+        {block:Photoset}
+        </header>
+        <figure class="photoset">
+	        <dt class="flash">{Photoset-400}</dt>
+	        {block:Caption}<dd class="caption">{Caption}</dd>{/block:Caption}
+	       </figure>
+        {/block:Photoset} 
+
+        {block:Video}
+        </header>
+        <figure class="video">
+          <dt class="flash">{Video-400}</dt>
+          {block:Caption}<dd class="caption">{Caption}</dd>{/block:Caption}
+        </figure>
+        {/block:Video}
+          
+        {block:Audio}
+        </header>
+        <div class="audio">
+          {AudioPlayerBlack}
+          {block:Caption}
+          <div class="post-body">{Caption}</div>
+          {/block:Caption}
+        </div>
+        {/block:Audio}
+        
+				<footer>
+					{block:HasTags}
+						<h3>Tagged</h3>
+	          <ul class="tags">
+	          {block:Tags}
+	            <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
+	          {/block:Tags}
+	          </ul>
+	        {/block:HasTags}
+	        
+	        <p class="comment-link"><a href="{Permalink}#idc-container" class="IDCommentsReplace">Leave a comment</a></p>
+        </footer>
+        
+      </article><!--.post-->
+      {/block:Posts}
+      
+    {block:IndexPage}</section><!--#postlist-->{/block:IndexPage}
+    
+    {block:Permalink}<!--ID Comments--> <div id="idc-container"></div> <!--/ID Comments-->{/block:Permalink}
+          
+    <footer>
+    
+    <section id="search">
+	    <h3>Search</h3>
+				<form action="/search" method="get">
+					<div>
+						<input type="search" autosave="bgyb" results="0" name="q" maxlength="80" value="Search posts..." />
+						<input type="submit" value="Search" class="submit" />
+					</div>
+			</form>
+		</section>
+		
+		<nav class="sketchblock">
+	    <p class="archive"><a href="/archive/" rel="archives">Archive</a></p>
+	    
+	    {block:Pagination} 
+	      <!-- <p class="present">Page <strong>{CurrentPage}</strong> of <strong>{TotalPages}</strong></p> -->
+		    {block:NextPage}<p class="past"><a href="{NextPage}" rel="prev">Older Posts</a></p>{/block:NextPage}
+	      {block:PreviousPage}<p class="future"><a href="{PreviousPage}" rel="next">Newer Posts</a></p>{/block:PreviousPage}
+	    {/block:Pagination}
+	        
+	    {block:PermalinkPagination} 
+		    {block:PreviousPost}<p class="past"><a href="{PreviousPost}" rel="prev">Previous Post</a></p>{/block:PreviousPost}
+	      {block:NextPost}<p class="future"><a href="{NextPost}" rel="next">Next Post</a></p>{/block:NextPost}
+	    {/block:PermalinkPagination}
+	    
+	    {block:DayPagination}
+		    {block:PreviousDayPage}<p class="past"><a href="{PreviousDayPage}" rel="prev">Previous Day</a></p>{/block:PreviousDayPage}
+	      {block:NextDayPage}<p class="future"><a href="{NextDayPage}" rel="next">Next Day</a></p>{/block:NextDayPage}
+	    {/block:DayPagination} 
+    </nav>
+    
+		</footer>
+	
+	</div><!--#page-->
+	</div></div><!--bgmaps-->
+	
+	{block:Permalink}<!--Intense Debate--><script src="http://www.intensedebate.com/js/tumblrWrapper.php?acct=5ef1d046f3aa2c8765c3658a583874c1" type="text/javascript"></script><!--/Intense Debate-->{/block:Permalink}
+	
+<!--[if lte IE 6]><script type="text/javascript">if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://static.ie6update.com/hosted/ie6update/images/", 
+		message: "Internet Explorer is missing updates required to view this page so it may appear broken. Click here to update&hellip;"
+	}
+</script><script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script><![endif]-->
+	</body>
+</html>
+
+<!-- 
+I wish the world was flat like the old days
+so I could travel just by folding the map.
+No more airplanes or speed-trains or freeways,
+there'd be no distance that could hold us back.
+-->
